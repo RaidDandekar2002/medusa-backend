@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  AWS_REGION: us-west-2  # Change this to match your preferred AWS region
+  AWS_REGION: us-east-1  # Change this to match your preferred AWS region
   ECS_CLUSTER: medusa-cluster
   ECS_SERVICE: medusa-service
   ECS_TASK_DEFINITION: .github/workflows/task-definition.json
