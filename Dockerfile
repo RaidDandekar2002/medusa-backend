@@ -3,7 +3,7 @@ FROM node:18-alpine
 WORKDIR /app/medusa
 
 COPY package.json .
-COPY yarn.lock .
+COPY yarn.lock* .
 
 RUN yarn install
 
