@@ -1,0 +1,19 @@
+{
+  "family": "medusa-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "containerDefinitions": [
+    {
+      "name": "medusa-container",
+      "image": "medusajs/medusa:latest",
+      "portMappings": [
+        {
+          "containerPort": 9000,
+          "hostPort": 9000
+        }
+      ]
+    }
+  ]
+}
