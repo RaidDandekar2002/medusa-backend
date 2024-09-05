@@ -1,4 +1,4 @@
-FROM medusajs/medusa-base:latest
+FROM node:18-alpine
 
 WORKDIR /app/medusa
 
@@ -13,4 +13,4 @@ RUN yarn build
 
 EXPOSE 9000
 
-CMD ["medusa", "start"]
+CMD ["yarn", "start"]
